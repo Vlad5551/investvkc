@@ -1146,8 +1146,7 @@ try:
 
 			elif text in ["резерв", "рез"]:
 				if user_id in admin_ids:
-					await message.answer(f"""🌀: {formarter(rezerv())} VK Coin
-💎: {formarter(wallet.balance())} Рус. долляров""")
+					await message.answer(f"""🌀: {formarter(rezerv())} VK Coin""")
 
 			elif text in ["реф", "рефка", "реферал", "рефералка", "👥 рефералка", "🎫"]:
 				await message.answer(f"""🎫 {user.get(user_id, 'tag')}, за одного реферала вы получаете: {formarter(globals.get("ref_bonus"))} VK Coin.
