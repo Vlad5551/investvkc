@@ -18,11 +18,11 @@ bot.labeler.vbml_ignore_case = True
 def getCon():
 	try:
 		connection = pymysql.connect(
-			host="IP Базы",
-			port=3306, # Порт базы, обычно он 3306 на спринте, но может быть другим.
-			user="Логин от базы",
-			password="Пароль от базы",
-			database="Название базы",
+			host="141.8.192.193",
+			port=3306,
+			user="a0677620_invest",
+			password="qwerty123",
+			database="a0677620_invest",
 			cursorclass=pymysql.cursors.DictCursor)
 		return connection
 	except Exception as e:
