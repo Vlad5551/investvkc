@@ -4,7 +4,7 @@ from random import randint, choice
 from math import floor
 import time, pymysql, vkcoin, threading, pyqiwi
 
-merchant = vkcoin.VKCoin(key="O*-tp_yX9u;OskP_s2#P.R-#0LdQmsZNcHHf8g[OQKByOxGyhe", user_id=705783864)
+merchant = vkcoin.VKCoin(key="aoM1*ISb=hbwZ2SKd8I3yHfWHU*ieZ961p=m6;Kd1B7mMb8EGL", user_id=705783864)
 bot = Bot("dd8f8b777c6643b95bccde155cc1b492f0a5c1c07e3f6de99a60561711212f1b474e9b26084dbfba17a95")
 admin_ids = [498475943,705783864]
 longpoll_handler = None
@@ -164,6 +164,7 @@ class globals:
 		cursor = connection.cursor()
 		cursor.execute("""CREATE TABLE IF NOT EXISTS globals
 			(
+				id int primary key auto_increment,
 				ref_bonus int(20) not null default 200000,
 				bonus_max int(20) not null default 200000,
 				sub_bonus int(20) not null default 100000,
